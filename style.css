@@ -27,18 +27,16 @@ li a {
 
 }
 
-p{
-    color: #ffffff;
-}
-
 /*Effekt når man hover(hviler) over en knap*/
 li a:hover:not(.active){
     background-color: #111;
 }
+
+/*Den side man er på*/
 .active{
     background-color: #b9408c;
 }
-
+/*billede links i listen*/
 li a img {
     width: 3vw;
 }
@@ -82,6 +80,42 @@ li a img {
     padding: 2vw;
     color: #ffffff;
     font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.profile {
+    display: flex;
+    background-color: #111111;
+    & img {
+        width: 20vw;
+    }
+    & p{
+        margin-left: 2vw;
+    }
+}
+
+.car{
+    background-color: #111111;
+    display: flex;
+
+        & img{
+            width: 20vw;
+        }
+    }
+
+.model{
+    text-align: center;
+    & img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+    }
+    margin-right: 19vw;
+    margin-left: 19vw;
+    background-color: #111111;
+
 }
 /*Tekst i footeren*/
 .footerClass > div {
