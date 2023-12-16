@@ -46,12 +46,18 @@ li a img {
 
 
  /*Ændre udseenet til tlf venligt
- hidden bruges til at fjerne de andre menuer*/
+ hidden bruges til at fjerne de andre menuer
+ & body bruges til at rykke ting ned på mobilversion*/
 @media screen and (max-width: 600px){
+    & body{
+        margin-top: 23vh;
+    }
     ul li {float: none;}
+
    /* ul li a.hidden */
     {
         display: none;
+
     }
 }
 
