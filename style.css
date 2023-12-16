@@ -36,12 +36,28 @@ li a:hover:not(.active){
 .active{
     background-color: #b9408c;
 }
-/*billede links i listen*/
+/*logoet*/
 li a img {
     width: 3vw;
 }
+/*Projekt links*/
+h3 a:link, h3 a:visited{
+    color: #ffffff;
 
 
+    background-color: #111111;
+
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+h3 a:hover, h3 a:active {
+    background-color: #b9408c;
+}
 
  /*Ændre udseenet til tlf venligt
  hidden bruges til at fjerne de andre menuer
