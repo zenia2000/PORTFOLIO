@@ -1,0 +1,106 @@
+body{
+    background-color: #363636;
+    margin: 0;
+    margin-top: 12vw;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #882762;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    padding: 2vw;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3vw;
+    text-decoration: none;
+
+}
+
+p{
+    color: #ffffff;
+}
+
+/*Effekt når man hover(hviler) over en knap*/
+li a:hover:not(.active){
+    background-color: #111;
+}
+.active{
+    background-color: #b9408c;
+}
+
+li a img {
+    width: 3vw;
+}
+
+
+
+ /*Ændre udseenet til tlf venligt
+ hidden bruges til at fjerne de andre menuer*/
+@media screen and (max-width: 600px){
+    ul li {float: none;}
+   /* ul li a.hidden */
+    {
+        display: none;
+    }
+}
+
+.frontpage > div{
+    color: #ffffff;
+    background: #111111;
+    & h3 {
+        width: 39vw;
+        font-size: 4vw;
+        padding-left: 10vw;
+    }
+}
+
+.frontpage{
+    display: flex;
+    & img {
+        height: 50vw;
+    }
+}
+
+.text{
+    padding: 2vw;
+    color: #ffffff;
+    font-size: 2vw;
+}
+/*Tekst i footeren*/
+.footerClass > div {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1vw;
+    text-align: center;
+
+}
+
+.footerClass {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background: #882762;
+    justify-content: center;
+    & img {
+        height: 4vw;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 2vw;
+    font-size: 80%;
+}
