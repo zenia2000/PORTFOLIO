@@ -17,6 +17,8 @@ ul {
 li {
     float: left;
 }
+
+/*Links i navigationsbaren*/
 li a {
     display: block;
     padding: 2vw;
@@ -38,15 +40,12 @@ li a:hover:not(.active){
 }
 /*logoet*/
 li a img {
-    width: 3vw;
+    width: 2vw;
 }
-/*Projekt links*/
+/*Projekt links. Lavet så det ligner knapper*/
 h3 a:link, h3 a:visited{
     color: #ffffff;
-
-
     background-color: #111111;
-
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -54,7 +53,7 @@ h3 a:link, h3 a:visited{
 
 }
 
-
+/*Highlight knap når man hviler på den*/
 h3 a:hover, h3 a:active {
     background-color: #b9408c;
 }
@@ -75,6 +74,7 @@ h3 a:hover, h3 a:active {
     }
 }
 
+/*Text på forsiden*/
 .frontpage > div{
     color: #ffffff;
     background: #111111;
@@ -85,6 +85,7 @@ h3 a:hover, h3 a:active {
     }
 }
 
+/*layout og billede på forside*/
 .frontpage{
     display: flex;
     & img {
@@ -92,6 +93,7 @@ h3 a:hover, h3 a:active {
     }
 }
 
+/*Holder styr på det meste af teksten i programmet.*/
 .text{
     padding: 2vw;
     color: #ffffff;
@@ -100,6 +102,7 @@ h3 a:hover, h3 a:active {
 
 }
 
+/*Layout til profil del på "Om Mig" siden*/
 .profile {
     display: flex;
     background-color: #111111;
@@ -111,6 +114,7 @@ h3 a:hover, h3 a:active {
     }
 }
 
+/*Layout til bil del på "Om Mig" siden*/
 .car{
     background-color: #111111;
     display: flex;
@@ -120,6 +124,7 @@ h3 a:hover, h3 a:active {
         }
     }
 
+/*Formatere modeller på både 3D og Design proj. siderne*/
 .model{
     text-align: center;
     & img {
@@ -143,6 +148,7 @@ h3 a:hover, h3 a:active {
     text-align: center;
 
 }
+
 
 .footerClass {
     display: flex;
