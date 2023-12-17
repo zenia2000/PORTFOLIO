@@ -58,39 +58,36 @@ h3 a:hover, h3 a:active {
     background-color: #b9408c;
 }
 
- /*Ændre udseenet til tlf venligt
- hidden bruges til at fjerne de andre menuer
- & body bruges til at rykke ting ned på mobilversion*/
+
+
+ /*Ændre udseenet til tlf version*/
 @media screen and (max-width: 600px){
-    & body{
-        margin-top: 23vh;
-    }
     ul li {float: none;}
 
-   /* ul li a.hidden */
-    {
-        display: none;
-
-    }
 }
+
+
 
 /*Text på forsiden*/
 .frontpage > div{
     color: #ffffff;
     background: #111111;
-    & h3 {
-        width: 39vw;
-        font-size: 4vw;
-        padding-left: 10vw;
     }
-}
+
 
 /*layout og billede på forside*/
 .frontpage{
     display: flex;
-    & img {
-        height: 50vw;
-    }
+}
+
+.frontpage img{
+    height: 50vw;
+}
+
+.frontpage h3{
+    width: 39vw;
+    font-size: 4vw;
+    padding-left: 10vw;
 }
 
 /*Holder styr på det meste af teksten i programmet.*/
@@ -106,38 +103,41 @@ h3 a:hover, h3 a:active {
 .profile {
     display: flex;
     background-color: #111111;
-    & img {
-        width: 20vw;
-    }
-    & p{
-        margin-left: 2vw;
-    }
+}
+
+.profile p{
+    margin-left: 2vw;
+}
+
+.profile img{
+    width: 20vw;
 }
 
 /*Layout til bil del på "Om Mig" siden*/
 .car{
     background-color: #111111;
     display: flex;
-
-        & img{
-            width: 20vw;
-        }
     }
+
+.car img{
+    width: 20vw;
+}
 
 /*Formatere modeller på både 3D og Design proj. siderne*/
 .model{
     text-align: center;
-    & img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60vw;
-    }
     margin-right: 19vw;
     margin-left: 19vw;
     background-color: #111111;
-
 }
+
+.model img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
 /*Tekst i footeren*/
 .footerClass > div {
     color: #ffffff;
@@ -156,9 +156,10 @@ h3 a:hover, h3 a:active {
     text-align: center;
     background: #882762;
     justify-content: center;
-    & img {
-        height: 4vw;
-    }
+}
+
+.footerClass img{
+    height: 4vw;
 }
 
 footer{
